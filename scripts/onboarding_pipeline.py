@@ -38,8 +38,8 @@ TENANTS_BATCH = [
         },
 
         "integrations": {
-            "calendarId": "frozenpea880@gmail.com",
-            "notificationEmail": "frozenpea880@gmail.com"
+            "calendarId": "add the organization branch account",
+            "notificationEmail": "add the organization branch account"
         }
     },
 
@@ -60,8 +60,8 @@ TENANTS_BATCH = [
         },
 
         "integrations": {
-            "calendarId": "frozenpea880@gmail.com",
-            "notificationEmail": "frozenpea880@gmail.com"
+            "calendarId": "add the organization branch account",
+            "notificationEmail": "add the organization branch account"
         }
     },
 
@@ -82,8 +82,8 @@ TENANTS_BATCH = [
         },
 
         "integrations": {
-            "calendarId": "frozenpea880@gmail.com",
-            "notificationEmail": "frozenpea880@gmail.com"
+            "calendarId": "add the organization branch account",
+            "notificationEmail": "add the organization branch account"
         }
     },
 
@@ -104,8 +104,8 @@ TENANTS_BATCH = [
         },
 
         "integrations": {
-            "calendarId": "frozenpea880@gmail.com",
-            "notificationEmail": "frozenpea880@gmail.com"
+            "calendarId": "add the organization branch account",
+            "notificationEmail": "add the organization branch account"
         }
     }
 ]

@@ -283,8 +283,8 @@ Create a `.env` file in the project root:
 ENVIRONMENT=development
 DEBUG=True
 
-ROUTER_MODEL=gpt-4o-mini
-AGENT_MODEL=gpt-4o-mini
+ROUTER_MODEL=
+AGENT_MODEL=
 
 OPENAI_API_KEY=sk-proj-...
 
@@ -368,10 +368,11 @@ scripts/
 
 Creates:
 
-- Organization settings
-- Branch configurations
+- Organization settings add per your organizations
+- Branch configurations add per your organizations
 - Business rules
 - Booking preferences
+- Also an extra step go to google cloud console to get a service account credentials as a json. Then open the file to get the "client_email" then go the your calendar the you have in the configuration and then give managing access to "client_email"
 
 Run:
 
