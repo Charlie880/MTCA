@@ -1,0 +1,49 @@
+# --- 1. The API Layer ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic-settings>=2.6.0
+pydantic[email]
+
+# --- 2. The Orchestration Layer ---
+langgraph>=0.2.50
+langgraph-checkpoint-redis>=0.2.0
+
+# --- 3. The LangChain Ecosystem ---
+langchain>=0.3.7
+langchain-core>=0.3.21
+langchain-community>=0.3.7
+langchain-openai>=0.2.9
+langchain-text-splitters>=0.3.2
+
+# --- 4. Infrastructure Drivers ---
+motor>=3.4.0
+pymongo[srv]>=4.6.2
+redis>=5.2.0
+pinecone>=4.0.0
+certifi>=2024.2.2
+
+# --- 5. Utilities ---
+python-dotenv>=1.0.1
+tiktoken>=0.8.0
+gunicorn>=22.0.0
+
+# --- 6. Google Calendar Tool Integrations ---
+google-api-python-client>=2.150.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.1
+
+# --- 7. Dynamic Date Parsing & Timezones ---
+dateparser>=1.2.0
+pytz>=2024.1
+
+# --- 8. Transactional Email Core ---
+resend>=2.4.0
+
+# --- 9. UI Framework ---
+gradio
+
+# --- 10. Authentication & Security ---
+pyjwt>=2.8.0
+passlib[bcrypt]>=1.7.4
+bcrypt==4.1.2
+python-multipart>=0.0.9

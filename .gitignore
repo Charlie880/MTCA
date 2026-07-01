@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Google credentials
+service_account.json
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/

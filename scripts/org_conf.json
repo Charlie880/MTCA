@@ -1,0 +1,121 @@
+[
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "tenantName": "ABC Dentals - KTM Branch",
+    "tenantTone": "Clinical, highly professional, reassuring, and empathetic. Use medical terminology accurately but explain things simply to patients.",
+    "pineconeNamespace": "abc_dentals_ktm",
+    "toolConfig": {
+      "calendarId": "frozenpea880@gmail.com",
+      "notificationEmail": "frozenpea880@gmail.com",
+      "leadCaptureProducts": ["Smile Design Package", "Dental Implants", "Invisalign / Clear Aligners", "Corporate Dental Plans"]
+    },
+    "routerFewShots": [
+      {
+        "user_message": "How much does a root canal cost?",
+        "expected_action": "rag_info",
+        "reasoning": "The user is asking a general pricing question."
+      },
+      {
+        "user_message": "I am very interested in the Smile Design package and want to proceed.",
+        "expected_action": "lead_capture",
+        "reasoning": "The user is expressing explicit intent to purchase a high-ticket premium service."
+      },
+      {
+        "user_message": "Can I schedule a checkup for next Tuesday at 3 PM?",
+        "expected_action": "booking",
+        "reasoning": "The user is requesting to schedule an appointment."
+      }
+    ]
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "tenantName": "ABC Dentals - Pokhara Lakeside",
+    "tenantTone": "Urgent, accommodating, tourist-friendly, and reassuring. Focus on speed, convenience, and holiday preservation for travelers.",
+    "pineconeNamespace": "abc_dentals_pokhara",
+    "toolConfig": {
+      "calendarId": "frozenpea880@gmail.com",
+      "notificationEmail": "frozenpea880@gmail.com",
+      "leadCaptureProducts": ["Full Arch Restorations", "Premium Swiss Implants", "Dental Holiday Packages"]
+    },
+    "routerFewShots": [
+      {
+        "user_message": "Do you offer hotel visits? I chipped my tooth on a trek.",
+        "expected_action": "rag_info",
+        "reasoning": "The user is asking a question about service availability and policies."
+      },
+      {
+        "user_message": "I'd like to book an emergency hotel visit for my toothache tonight.",
+        "expected_action": "booking",
+        "reasoning": "The user wants to schedule an immediate mobile appointment."
+      },
+      {
+        "user_message": "I want to arrange a Dental Holiday for full arch implants during my vacation.",
+        "expected_action": "lead_capture",
+        "reasoning": "Explicit interest in a premium Dental Tourism and high-ticket implant package."
+      }
+    ]
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "tenantName": "XYZ Travels - Bhaktapur Cultural Hub",
+    "tenantTone": "Warm, culturally enthusiastic, welcoming, and descriptive. Act like a passionate local heritage expert.",
+    "pineconeNamespace": "xyz_travels_bhaktapur",
+    "toolConfig": {
+      "calendarId": "frozenpea880@gmail.com",
+      "notificationEmail": "frozenpea880@gmail.com",
+      "leadCaptureProducts": ["Platinum Travel Club Membership", "Gold Travel Club Membership", "12-Day Cultural Immersion Challenge"]
+    },
+    "routerFewShots": [
+      {
+        "user_message": "What is included in the Silver pass?",
+        "expected_action": "rag_info",
+        "reasoning": "The user is asking for information about a membership tier."
+      },
+      {
+        "user_message": "I want to sign my family up for the 12-Day Cultural Immersion Challenge.",
+        "expected_action": "lead_capture",
+        "reasoning": "The user is showing intent to purchase a high-value specialist immersion program."
+      },
+      {
+        "user_message": "Can I book a private architecture guide for tomorrow morning?",
+        "expected_action": "booking",
+        "reasoning": "The user wants to schedule a specific guided tour session."
+      }
+    ]
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "tenantName": "XYZ Travels - Lalitpur Corporate & Adventure",
+    "tenantTone": "Professional, adventurous, organized, and corporate-focused. Inspire confidence through safety, logistics, and elite planning.",
+    "pineconeNamespace": "xyz_travels_lalitpur",
+    "toolConfig": {
+      "calendarId": "frozenpea880@gmail.com",
+      "notificationEmail": "frozenpea880@gmail.com",
+      "leadCaptureProducts": ["Executive Corporate Retainer", "Elite Corporate Retainer", "Enterprise Retreat Package", "Everest Base Camp Prep Package"]
+    },
+    "routerFewShots": [
+      {
+        "user_message": "What medical gear do I need for the Annapurna Circuit?",
+        "expected_action": "rag_info",
+        "reasoning": "The user is asking an FAQ regarding expedition safety and gear policies."
+      },
+      {
+        "user_message": "Cancel my booking for the ice bath recovery session this afternoon.",
+        "expected_action": "booking",
+        "reasoning": "The user is requesting an appointment modification (cancellation)."
+      },
+      {
+        "user_message": "Our company has 60 employees and we want to sign up for the Enterprise retreat package.",
+        "expected_action": "lead_capture",
+        "reasoning": "High-intent B2B purchase request for a corporate tier."
+      }
+    ]
+  }
+]
+
+
+

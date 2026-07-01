@@ -1,0 +1,184 @@
+[
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Namaste. Maile almost 2 barsa dekhi scaling gareko chaina. Ali yellow stains pani cha. Scaling ra polishing garna kati jati kharcha lagcha? Consultation fee pani chutai ho ki included huncha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is requesting pricing information, consultation fees, and service details. Although they describe their dental condition, they are not asking to book an appointment or expressing commitment to treatment. This is a pure informational query."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Ma HR bata bolirako ho. Hamro company ma around 120 employees chan. Annual dental checkup ra emergency coverage sahit corporate plan line interest cha. Proposal kasari start garne? Hami next month bata implement garna chahanchau.",
+    "expected_action": "lead_capture",
+    "reasoning": "The user identifies themselves as an HR representative, specifies company size, desired services, and implementation timeline. This is explicit commercial interest in a high-value B2B offering, making lead capture the highest priority."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Hi, I already have a root canal appointment booked for tomorrow at around 11 AM under the name Ramesh Shrestha. Something urgent came up at work. Could you cancel that appointment and move it to any available slot this Sunday afternoon instead?",
+    "expected_action": "booking",
+    "reasoning": "The user references an existing appointment and requests cancellation followed by rescheduling. Appointment management requests always belong in the booking workflow."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Rati 2 baje ekdam dukhyo bhane emergency dentist available huncha? Appointment chaina aile, just future ko lagi sodheko.",
+    "expected_action": "conversational_agent",
+    "reasoning": "Although the user describes an emergency scenario, they explicitly state they are only asking for future reference and are not requesting treatment or booking."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "user_message": "I'm visiting Pokhara from Germany next month. I heard you help tourists with insurance paperwork. Also, if everything looks good, I might get implants while I'm there.",
+    "expected_action": "lead_capture",
+    "reasoning": "The message starts as an informational insurance question but also expresses genuine interest in undergoing implant treatment. High-value treatment intent takes priority over informational requests."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "user_message": "Mero daat ko filling futeko cha. Hotel ma nai herna aauna milcha? Yedi possible bhaye aaja beluka samma arrange gardinu hola.",
+    "expected_action": "booking",
+    "reasoning": "The user requests a same-day mobile hotel visit and asks for it to be arranged immediately. This requires appointment scheduling."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "user_message": "Australia bata next month aaudai chu. Full arch implants ko lagi Dental Holiday Package arrange garna cha. Hotel, airport pickup ra treatment schedule sabai organize garna milcha?",
+    "expected_action": "lead_capture",
+    "reasoning": "The user wants to move forward with a flagship treatment package and asks for complete travel coordination, making this a qualified high-value sales lead."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "user_message": "Annapurna trek jana aghi fit-to-travel certificate dinu huncha? Trekking permit ko lagi valid medical clearance huncha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is asking whether the clinic is authorized to provide medical clearance documentation. This is purely an informational question."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Hamile Juju Dhau tasting ko booking gareko thiyau bholi ko lagi. Family emergency bhayo. Cancel garera arko week sari dina milcha?",
+    "expected_action": "booking",
+    "reasoning": "The user wants to modify an existing reservation by cancelling and rescheduling it, which belongs in the booking workflow."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Hamro family ma 5 jana chau. December ko lagi 12-Day Cultural Immersion Challenge book garna interested chau. Accommodation, food ra guide sab included bhaye ramro huncha. Availability check garera process start garna sakinchha?",
+    "expected_action": "lead_capture",
+    "reasoning": "The customer expresses clear purchase intent for a premium program while providing group size, travel timing, and desired inclusions. This is a qualified lead."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Bronze ra Silver membership ma exact difference k ho? Cooking class, photography tour ra priority booking dubai ma huncha ki Silver ma matra?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is comparing membership features before making any purchase decision. This requires knowledge retrieval only."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Pahilo choti aaune lai free walking tour cha bhaneko suneko thiye. Guide pani free ho? Entry ticket chai afai tirnu parcha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is verifying the free trial policy and what is included. There is no booking request."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Hi. Bholi bihana 6 baje ko lagi Ice Bath session book garna milcha? Trek bata hijo matra farkeko ho.",
+    "expected_action": "booking",
+    "reasoning": "The user requests a specific recovery service at a specific time, which is a scheduling request."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "I'm reaching out on behalf of our HR team. We're planning next year's travel budget and would like to move ahead with the Elite Corporate Retainer. Could someone contact us with the onboarding process?",
+    "expected_action": "lead_capture",
+    "reasoning": "The customer is ready to proceed with a high-value corporate package and requests next steps. This should enter the lead pipeline."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Annapurna Circuit ko lagi gear checklist cha? Tapai haru departure aghi gear inspection pani gardinu huncha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The customer is asking about required equipment and available gear-checking services, making this an informational request."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Everest Base Camp Prep Package ko price pathaidinu. Budget thik bhayo bhane aaja nai reserve garna ready chu.",
+    "expected_action": "lead_capture",
+    "reasoning": "Although the user asks about pricing, they immediately express readiness to reserve the package today. Purchase intent outweighs the pricing inquiry."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Everest Prep Package ko price kati ho? Ma aile compare gardai chu. Booking chai ali pachi garne soch cha.",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user explicitly states they are only comparing options and do not intend to purchase yet. This remains an informational query despite mentioning a premium package."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Smile Design Package ko barema ali detail dinus na. Veneers, whitening ra contouring sab included ho? Booking chai aile garne chaina, just bujhna khojeko.",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user explicitly states they are only gathering information and are not ready to book, despite asking about a flagship cosmetic package."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Clear aligners start garna ready chu. Consultation, scans ra payment process sabai start garna milcha? Yo week bhitra suru garna man cha.",
+    "expected_action": "lead_capture",
+    "reasoning": "The user expresses immediate intent to begin a premium orthodontic treatment and requests the onboarding process rather than simply asking for information."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Hi! Family lai heritage walk book garna socheko thiye tara weather forecast ramro chaina. Booking garepachi weather le bigryo bhane reschedule garna milcha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is asking about rescheduling policies before making a reservation. They are not requesting an actual booking."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Hi",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is simply greeting the assistant. There is no request for information, booking, or purchase intent. The assistant should respond conversationally without performing retrieval."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "ktm",
+    "user_message": "Namaste! Kasto cha?",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is initiating casual conversation. No business action or knowledge retrieval is required."
+  },
+  {
+    "orgId": "abc_dentals",
+    "branchId": "pokhara",
+    "user_message": "Thanks, that answered my question perfectly.",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is expressing gratitude and not requesting additional information or actions."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "bhaktapur",
+    "user_message": "Good morning!",
+    "expected_action": "conversational_agent",
+    "reasoning": "The message is a simple greeting without any travel-related request."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Haha that's awesome 😂",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is reacting conversationally to a previous response and does not require any business workflow."
+  },
+  {
+    "orgId": "xyz_travels",
+    "branchId": "lalitpur",
+    "user_message": "Okay, I'll think about it and get back to you later.",
+    "expected_action": "conversational_agent",
+    "reasoning": "The user is ending the conversation for now without asking a question, making a booking, or expressing immediate purchase intent."
+  }
+]
