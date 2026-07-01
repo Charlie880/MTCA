@@ -19,7 +19,8 @@ class Settings(BaseSettings):
     
     # OpenAI Settings
     OPENAI_API_KEY: str = Field(..., description="OpenAI API Key")
-    ROUTER_MODEL: str = Field(default="gpt-4.1-nano", description="The model to use for routing decisions")
+    ROUTER_MODEL: str = Field(description="The model to use for routing decisions")
+    CHAT_MODEL: str = Field(description="The model to use for routing decisions")
     # Google Service Account Settings
     GOOGLE_SERVICE_ACCOUNT_FILE: str = Field(..., description="Path to Google Service Account JSON file")
 

@@ -25,7 +25,7 @@ def get_router_llm():
     global _llm
     if _llm is None:
         _llm = ChatOpenAI(
-            model="gpt-4o-mini",
+            model=settings.ROUTER_MODEL,
             temperature=0,
             api_key=settings.OPENAI_API_KEY,
         )

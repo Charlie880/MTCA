@@ -112,7 +112,7 @@ Supports:
 |---|---|
 | Agent Framework | LangGraph |
 | LLM Framework | LangChain |
-| Models | OpenAI GPT-4o-mini / GPT-4o |
+| Models | OpenAI|
 
 ---
 
@@ -195,27 +195,90 @@ Resend
 
 # 📦 Installation
 
-Clone the repository:
+# 🚀 MTCA — Multi-Tenant Conversational AI Platform
+
+<p align="center">
+  <b>Enterprise-grade AI agents for sales, support, and business automation.</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi" />
+  <img src="https://img.shields.io/badge/LangGraph-Agent%20Workflow-purple" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb" />
+  <img src="https://img.shields.io/badge/Pinecone-Vector%20Search-blueviolet" />
+</p>
+
+---
+
+## 🌐 Overview
+
+**MTCA (Multi-Tenant Conversational AI)** is a scalable AI-powered conversational platform designed for organizations that need intelligent automation across multiple businesses, branches, and workflows.
+
+It combines:
+
+- 🤖 LLM-powered conversations
+- 🧠 Stateful AI workflows
+- 🔍 Retrieval-Augmented Generation (RAG)
+- 🏢 Enterprise multi-tenancy
+- 📅 Calendar automation
+- 💼 Lead qualification
+- 📊 CRM-style customer intelligence
+
+MTCA enables businesses to deploy intelligent AI agents while maintaining strict tenant and branch-level data isolation.
+
+---
+
+# ⚡ Quick Start
+
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/mtca.git
 
 cd mtca
+```
 
+---
+
+## 2. Create Virtual Environment
+
+```bash
 python -m venv venv
+```
 
+Activate:
+
+### Linux / macOS
+
+```bash
 source venv/bin/activate
-# Windows:
-# venv\Scripts\activate
+```
 
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-🔐 Environment Configuration
+```
 
-Create a .env file in the project root:
+---
 
-# -----------------------------
-# App & Model Settings
-# -----------------------------
+# 🔐 Environment Configuration
+
+Create a `.env` file in the project root:
+
+```env
+# ==================================
+# Application & Model Configuration
+# ==================================
 
 ENVIRONMENT=development
 DEBUG=True
@@ -226,172 +289,257 @@ AGENT_MODEL=gpt-4o-mini
 OPENAI_API_KEY=sk-proj-...
 
 
-# -----------------------------
-# Database URLs
-# -----------------------------
+# ==================================
+# Database Configuration
+# ==================================
 
 MONGO_URI=mongodb+srv://<user>:<pass>@cluster.mongodb.net/?retryWrites=true&w=majority
 
 REDIS_URL=redis://default:<pass>@<host>:<port>
 
 
-# -----------------------------
-# Pinecone
-# -----------------------------
+# ==================================
+# Vector Database
+# ==================================
 
 PINECONE_API_KEY=your_pinecone_api_key
 
 PINECONE_INDEX_NAME=mtca-index
 
 
-# -----------------------------
-# Auth / Security
-# -----------------------------
+# ==================================
+# Authentication & Security
+# ==================================
 
-JWT_SECRET_KEY=your_super_secret_jwt_key_here
+JWT_SECRET_KEY=your_super_secret_jwt_key
 
 JWT_ALGORITHM=HS256
 
 
-# -----------------------------
+# ==================================
 # External Integrations
-# -----------------------------
+# ==================================
 
 GOOGLE_SERVICE_ACCOUNT_FILE=service_account.json
 
 RESEND_API_KEY=re_your_resend_key
 
 RESEND_EMAIL=onboarding@resend.dev
+```
 
-⚠️ Important
+---
 
-Place your Google Cloud service_account.json file in the project root.
+# ⚠️ Security Configuration
 
-Add it to .gitignore:
+Place your Google Cloud credentials in the project root:
 
+```
 service_account.json
+```
+
+Never commit secrets.
+
+Add to `.gitignore`:
+
+```gitignore
 .env
-🗄 Data Seeding & Initialization
+service_account.json
+```
 
-Before launching the application, initialize:
+---
 
-Tenant configurations
-Knowledge bases
-Semantic routing examples
+# 🗄 Database Seeding & Initialization
 
-All scripts are available inside:
+Before starting MTCA, initialize:
 
+- 🏢 Tenant configurations
+- 📚 Knowledge bases
+- 🧠 Semantic routing examples
+
+All initialization scripts are located in:
+
+```
 scripts/
-Step 1 — Onboard Tenants (MongoDB)
+```
 
-Creates tenant configurations, branch settings, rules, and booking preferences.
+---
 
+# 1️⃣ Tenant Onboarding (MongoDB)
+
+Creates:
+
+- Organization settings
+- Branch configurations
+- Business rules
+- Booking preferences
+
+Run:
+
+```bash
 python scripts/onboarding_pipeline.py
-Step 2 — Process Knowledge Base
+```
 
-Reads raw business documents, cleans content, and creates semantic chunks.
+---
 
+# 2️⃣ Knowledge Base Processing
+
+Processes business documents:
+
+- Cleans raw content
+- Creates semantic chunks
+- Prepares documents for embedding
+
+
+Run:
+
+```bash
 python scripts/chunker.py
+```
 
-Optional:
+Optional review:
 
-Review:
-
+```
 chunk_review_debug.md
+```
 
-to validate generated chunks.
+---
 
-Step 3 — Embed Knowledge Base (Pinecone)
+# 3️⃣ Knowledge Embedding (Pinecone)
 
-Uploads embeddings using dynamic tenant namespaces:
+Uploads embeddings using tenant-isolated namespaces:
 
+```
 {org_id}_{branch_id}
+```
 
-This guarantees:
+Guarantees:
 
-✅ Tenant isolation
-✅ Branch-specific retrieval
-✅ Zero cross-company data leakage
+✅ Tenant isolation  
+✅ Branch-level retrieval  
+✅ Zero cross-company data leakage  
 
 Run:
 
+```bash
 python scripts/verctor_kb.py
-Step 4 — Embed Routing Examples
+```
 
-Creates semantic few-shot examples for intent classification.
+---
 
-Used by the LangGraph router to detect:
+# 4️⃣ Routing Example Embeddings
 
-Booking requests
-Lead capture requests
-General conversations
+Creates semantic few-shot examples for intent detection.
+
+Used by the LangGraph router for:
+
+- 📅 Booking requests
+- 💼 Lead capture
+- 💬 General conversations
 
 Run:
 
+```bash
 python scripts/embed_routing_example.py
-🏃 Running the Application
+```
+
+---
+
+# 🏃 Running MTCA
 
 MTCA contains:
 
-FastAPI backend
-Gradio frontend
+```
+Backend  → FastAPI
+Frontend → Gradio
+```
 
 Run both separately.
 
-1. Start Backend
+---
+
+# 1. Start Backend
+
+```bash
 uvicorn main:app --reload
+```
 
 Backend:
 
+```
 http://localhost:8000
+```
 
 API Documentation:
 
+```
 http://localhost:8000/docs
-2. Start Frontend
+```
+
+---
+
+# 2. Start Frontend
 
 Open another terminal:
 
+```bash
 cd ui
 
 python ui.py
+```
 
 Frontend:
 
+```
 http://localhost:7860
-📖 How It Works
-1. Authentication
+```
 
-The user selects:
+---
 
+# 🧠 System Architecture
+
+## 1. Authentication Flow
+
+```
 Organization
+      |
       ↓
-Branch
+Branch Selection
+      |
       ↓
 JWT Authentication
+      |
+      ↓
+Tenant-Aware Session
+```
 
-The system generates a tenant-aware session.
+The system creates isolated sessions for every organization and branch.
 
-2. State Initialization
+---
 
-The /chat endpoint:
+# 2. State Initialization
 
-Extracts org_id
-Extracts branch_id
-Loads tenant configuration
-Initializes MultiTenantState
+The `/chat` endpoint:
+
+1. Extracts `org_id`
+2. Extracts `branch_id`
+3. Loads tenant configuration
+4. Creates `MultiTenantState`
 
 Storage:
 
+```
 MongoDB
- +
+   +
 Redis
-3. Intent Dispatch (Router)
+```
 
-The LangGraph router analyzes conversation history.
+---
 
-Possible routes:
+# 3. Intent Router
 
+The LangGraph router analyzes conversation context.
+
+```
                 User Message
                      |
                      ↓
@@ -400,97 +548,132 @@ Possible routes:
         ┌────────────┼────────────┐
         ↓            ↓            ↓
 
-     Booking   Lead Capture   Conversation
+    Booking     Lead Capture   Conversation
+```
 
+Handles:
 
-The router handles:
+✅ Flow interruptions  
+✅ Context switching  
+✅ Resume logic  
+✅ Cancellation requests  
 
-Flow interruptions
-Context switching
-Resume logic
-Cancellation requests
-⚙️ Agent Execution Flow
-📚 RAG Node
+---
+
+# ⚙️ Agent Execution Pipeline
+
+## 📚 RAG Node
+
+Responsible for intelligent knowledge retrieval.
 
 Responsibilities:
 
-Extract search intent
-Query Pinecone
-Search branch namespace
-Return grounded answers
+- Detect search intent
+- Query Pinecone
+- Search branch namespace
+- Generate grounded answers
+
 
 Flow:
 
+```
 User Question
       ↓
 Semantic Search
       ↓
-Branch Vector Namespace
+Tenant Vector Namespace
       ↓
 Grounded Response
-💼 Lead Capture Node
+```
+
+---
+
+# 💼 Lead Capture Node
+
+Automatically qualifies customers.
 
 Responsibilities:
 
-Identify missing information
-Ask contextual questions
-Extract customer details
-Store completed leads
+- Identify missing information
+- Ask contextual questions
+- Extract customer details
+- Store qualified leads
+
 
 Example:
 
+```
 Customer:
 "I need enterprise pricing"
 
 Agent:
-"Great. How many users will need access?"
+"How many users need access?"
+```
 
 ↓
 
-Lead Profile Saved
-📅 Booking Node
+```
+Lead Profile Created
+```
+
+---
+
+# 📅 Booking Node
+
+Automates scheduling workflows.
 
 Responsibilities:
 
-Parse date/time requests
-Check Google Calendar availability
-Reserve slots
-Prevent duplicates
-Store booking records
-Send confirmation emails
+- Parse date/time requests
+- Check Google Calendar availability
+- Reserve appointments
+- Prevent duplicates
+- Send confirmations
+
 
 Flow:
 
+```
 Booking Request
         ↓
 Availability Check
         ↓
 Calendar Reservation
         ↓
-Mongo Update
+MongoDB Update
         ↓
-Resend Notification
-🌟 Why MTCA?
+Email Notification
+```
+
+---
+
+# 🌟 Why MTCA?
 
 MTCA combines:
 
-✅ Enterprise multi-tenancy
-✅ Stateful AI workflows
-✅ Retrieval-augmented intelligence
-✅ Automated sales operations
-✅ CRM-style lead qualification
-✅ Calendar automation
+| Capability | Description |
+|---|---|
+| 🏢 Multi-Tenancy | Enterprise organization isolation |
+| 🤖 AI Agents | Stateful intelligent workflows |
+| 🔍 RAG | Knowledge-grounded responses |
+| 💼 Lead Automation | Automated qualification |
+| 📅 Scheduling | Calendar-based booking |
+| 🔐 Security | Tenant-aware authentication |
 
-into a single scalable conversational sales platform.
+into one scalable conversational AI platform.
 
-🛣 Future Roadmap
+---
 
-Potential extensions:
+# 🛣 Roadmap
 
-WhatsApp / SMS channels
-Voice agents
-Advanced CRM integrations
-Analytics dashboard
-Agent performance monitoring
-Human handoff workflows
-Custom enterprise tools
+Future improvements:
+
+- 💬 WhatsApp / SMS channels
+- 🎙 Voice AI agents
+- 🔗 Advanced CRM integrations
+- 📊 Analytics dashboard
+- 📈 Agent performance monitoring
+- 👥 Human handoff workflows
+- 🛠 Custom enterprise tools
+
+---

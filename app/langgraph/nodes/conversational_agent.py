@@ -25,7 +25,7 @@ async def _get_decision_llm():
     async with _llm_lock:
         if _decision_llm is None:
             _decision_llm = ChatOpenAI(
-                model="gpt-4.1-nano",
+                model=settings.CHAT_MODEL,
                 api_key=settings.OPENAI_API_KEY,
                 temperature=0,
                 model_kwargs={"response_format": {"type": "json_object"}},

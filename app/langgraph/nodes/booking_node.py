@@ -38,7 +38,7 @@ async def _get_llm() -> ChatOpenAI:
     async with _llm_lock:
         if _llm is None:
             _llm = ChatOpenAI(
-                model="gpt-4o-mini",
+                model=settings.CHAT_MODEL,
                 temperature=0,
                 api_key=settings.OPENAI_API_KEY,
             )
