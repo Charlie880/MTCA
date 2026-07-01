@@ -3,11 +3,11 @@
     "orgId": "abc_dentals",
     "branchId": "ktm",
     "tenantName": "ABC Dentals - KTM Branch",
-    "tenantTone": "Clinical, highly professional, reassuring, and empathetic. Use medical terminology accurately but explain things simply to patients.",
+    "tenantDescription": "A modern, state-of-the-art dental clinic in Kathmandu specializing in cosmetic dentistry, restorative treatments, orthodontics, and dental tourism. The branch offers advanced technology, experienced specialists, flexible payment options, and comprehensive care for both local and international patients.",
     "pineconeNamespace": "abc_dentals_ktm",
     "toolConfig": {
-      "calendarId": "frozenpea880@gmail.com",
-      "notificationEmail": "frozenpea880@gmail.com",
+      "calendarId": "Your Account",
+      "notificationEmail": "Your Account",
       "leadCaptureProducts": ["Smile Design Package", "Dental Implants", "Invisalign / Clear Aligners", "Corporate Dental Plans"]
     },
     "routerFewShots": [
@@ -32,11 +32,11 @@
     "orgId": "abc_dentals",
     "branchId": "pokhara",
     "tenantName": "ABC Dentals - Pokhara Lakeside",
-    "tenantTone": "Urgent, accommodating, tourist-friendly, and reassuring. Focus on speed, convenience, and holiday preservation for travelers.",
+    "tenantDescription": "A tourist-focused dental clinic in Lakeside, Pokhara, providing rapid emergency dental care, premium implant services, same-day restorative treatments, and dental holiday packages. It is designed to serve travelers, trekkers, and international visitors with convenient, high-quality care.",
     "pineconeNamespace": "abc_dentals_pokhara",
     "toolConfig": {
-      "calendarId": "frozenpea880@gmail.com",
-      "notificationEmail": "frozenpea880@gmail.com",
+      "calendarId": "Your Account",
+      "notificationEmail": "Your Account",
       "leadCaptureProducts": ["Full Arch Restorations", "Premium Swiss Implants", "Dental Holiday Packages"]
     },
     "routerFewShots": [
@@ -61,11 +61,11 @@
     "orgId": "xyz_travels",
     "branchId": "bhaktapur",
     "tenantName": "XYZ Travels - Bhaktapur Cultural Hub",
-    "tenantTone": "Warm, culturally enthusiastic, welcoming, and descriptive. Act like a passionate local heritage expert.",
+    "tenantDescription": "A cultural and wellness travel hub offering guided heritage tours, culinary experiences, traditional workshops, wellness retreats, and immersive Newari cultural programs. The branch is ideal for families, slow travelers, and visitors seeking authentic local experiences.",
     "pineconeNamespace": "xyz_travels_bhaktapur",
     "toolConfig": {
-      "calendarId": "frozenpea880@gmail.com",
-      "notificationEmail": "frozenpea880@gmail.com",
+      "calendarId": "Your Account",
+      "notificationEmail": "Your Account",
       "leadCaptureProducts": ["Platinum Travel Club Membership", "Gold Travel Club Membership", "12-Day Cultural Immersion Challenge"]
     },
     "routerFewShots": [
@@ -90,11 +90,11 @@
     "orgId": "xyz_travels",
     "branchId": "lalitpur",
     "tenantName": "XYZ Travels - Lalitpur Corporate & Adventure",
-    "tenantTone": "Professional, adventurous, organized, and corporate-focused. Inspire confidence through safety, logistics, and elite planning.",
+    "tenantDescription": "The flagship adventure and corporate travel center specializing in high-altitude trekking, expedition planning, MICE services, corporate retreats, and post-trek recovery. It caters to business clients, adventure enthusiasts, and organizations with comprehensive logistics and safety-focused travel solutions.",
     "pineconeNamespace": "xyz_travels_lalitpur",
     "toolConfig": {
-      "calendarId": "frozenpea880@gmail.com",
-      "notificationEmail": "frozenpea880@gmail.com",
+      "calendarId": "Your Account",
+      "notificationEmail": "Your Account",
       "leadCaptureProducts": ["Executive Corporate Retainer", "Elite Corporate Retainer", "Enterprise Retreat Package", "Everest Base Camp Prep Package"]
     },
     "routerFewShots": [

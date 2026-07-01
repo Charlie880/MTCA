@@ -27,9 +27,8 @@ TENANTS_BATCH = [
 
         "tenantName": "ABC Dentals - KTM Branch",
 
-        "tenantTone": (
-            "Clinical, highly professional, reassuring, and empathetic. "
-            "Use medical terminology accurately but explain things simply to patients."
+        "tenantDescription": (
+            "A modern, state-of-the-art dental clinic in Kathmandu specializing in cosmetic dentistry, restorative treatments, orthodontics, and dental tourism. The branch offers advanced technology, experienced specialists, flexible payment options, and comprehensive care for both local and international patients."
         ),
 
         "pinecone": {
@@ -49,9 +48,8 @@ TENANTS_BATCH = [
 
         "tenantName": "ABC Dentals - Pokhara Lakeside",
 
-        "tenantTone": (
-            "Urgent, accommodating, tourist-friendly, and reassuring. "
-            "Focus on speed, convenience, and holiday preservation for travelers."
+        "tenantDescription": (
+            "A tourist-focused dental clinic in Lakeside, Pokhara, providing rapid emergency dental care, premium implant services, same-day restorative treatments, and dental holiday packages. It is designed to serve travelers, trekkers, and international visitors with convenient, high-quality care."
         ),
 
         "pinecone": {
@@ -71,9 +69,8 @@ TENANTS_BATCH = [
 
         "tenantName": "XYZ Travels - Bhaktapur Cultural Hub",
 
-        "tenantTone": (
-            "Warm, culturally enthusiastic, welcoming, and descriptive. "
-            "Act like a passionate local heritage expert."
+        "tenantDescription": (
+            "A cultural and wellness travel hub offering guided heritage tours, culinary experiences, traditional workshops, wellness retreats, and immersive Newari cultural programs. The branch is ideal for families, slow travelers, and visitors seeking authentic local experiences."
         ),
 
         "pinecone": {
@@ -93,9 +90,8 @@ TENANTS_BATCH = [
 
         "tenantName": "XYZ Travels - Lalitpur Corporate & Adventure",
 
-        "tenantTone": (
-            "Professional, adventurous, organized, and corporate-focused. "
-            "Inspire confidence through safety, logistics, and elite planning."
+        "tenantDescription": (
+            "The flagship adventure and corporate travel center specializing in high-altitude trekking, expedition planning, MICE services, corporate retreats, and post-trek recovery. It caters to business clients, adventure enthusiasts, and organizations with comprehensive logistics and safety-focused travel solutions."
         ),
 
         "pinecone": {
