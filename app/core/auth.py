@@ -10,8 +10,8 @@ from app.core.config import settings
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 security = HTTPBearer()
 
-SECRET_KEY = os.getenv("JWT_SECRET_KEY", "fallback_secret_for_dev")
-ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
+SECRET_KEY = settings.JWT_SECRET_KEY("JWT_SECRET_KEY", "fallback_secret_for_dev")
+ALGORITHM = settings.JWT_ALGORITHM("JWT_ALGORITHM", "HS256")
 
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
